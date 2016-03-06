@@ -25,11 +25,11 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		solveChallenge(scanner.Text())
+		multiplesOfANumber(scanner.Text())
 	}
 }
 
-func solveChallenge(text string) {
+func multiplesOfANumber(text string) {
 	elements := strings.Split(text, ",")
 	x, _ := strconv.Atoi(elements[0])
 	n, _ := strconv.Atoi(elements[1])

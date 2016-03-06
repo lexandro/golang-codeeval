@@ -25,11 +25,11 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		solveChallenge(scanner.Text())
+		reverseWords(scanner.Text())
 	}
 }
 
-func solveChallenge(text string) {
+func reverseWords(text string) {
 	var buffer bytes.Buffer
 	elements := strings.Split(text, " ")
 

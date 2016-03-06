@@ -1,9 +1,10 @@
 package main
 
 import (
-	"math"
 	"fmt"
+	"math"
 )
+
 /*
  CodeEval's Sum of Primes easy challenge solution
 
@@ -13,23 +14,22 @@ import (
  Github: https://github.com/lexandro/golang-codeeval
 */
 func main() {
-	sum := 0;
-	primeCounter := 0;
+	sum := 0
+	primeCounter := 0
 	for i := 2; primeCounter < 1000; i++ {
-		if isPrime(i) {
-			sum += i;
-			primeCounter++;
+		if isPrimeNumber(i) {
+			sum += i
+			primeCounter++
 		}
 	}
 	fmt.Println(sum)
 }
 
-func isPrime(number int) bool {
+func isPrimeNumber(number int) bool {
 	for i := 2; i <= int(math.Sqrt(float64(number))); i++ {
-		if number % i == 0 && number != i {
+		if number%i == 0 && number != i {
 			return false
 		}
 	}
 	return true
 }
-

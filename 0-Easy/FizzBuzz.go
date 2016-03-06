@@ -25,11 +25,11 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		solveChallenge(scanner.Text())
+		fizzBuzz(scanner.Text())
 	}
 }
 
-func solveChallenge(text string) {
+func fizzBuzz(text string) {
 	elements := strings.Split(text, " ")
 	//
 	firstDivider, _ := strconv.Atoi(elements[0])

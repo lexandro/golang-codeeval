@@ -25,11 +25,11 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		solveChallenge(scanner.Text())
+		bitPositions(scanner.Text())
 	}
 }
 
-func solveChallenge(text string) {
+func bitPositions(text string) {
 	elements := strings.Split(text, ",")
 	number, _ := strconv.Atoi(elements[0])
 	bit1, _ := strconv.Atoi(elements[1])
