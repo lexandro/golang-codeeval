@@ -4,7 +4,14 @@ import (
 	"math"
 	"fmt"
 )
+/*
+ CodeEval's Sum of Primes easy challenge solution
 
+ Details: https://www.codeeval.com/open_challenges/4/
+
+ Author: Robert Stern (lexandro2000@gmail.com)
+ Github: https://github.com/lexandro/golang-codeeval
+*/
 func main() {
 	sum := 0;
 	primeCounter := 0;

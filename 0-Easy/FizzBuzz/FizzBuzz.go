@@ -7,6 +7,14 @@ import "strconv"
 import "bufio"
 import "os"
 
+/*
+ CodeEval's FizzBuzz easy challenge solution
+
+ Details: https://www.codeeval.com/open_challenges/1/
+
+ Author: Robert Stern (lexandro2000@gmail.com)
+ Github: https://github.com/lexandro/golang-codeeval
+*/
 func main() {
 	file, err := os.Open(os.Args[1])
 	if err != nil {
@@ -15,11 +23,11 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		fizzBuzz(scanner.Text())
+		solveChallenge(scanner.Text())
 	}
 }
 
-func fizzBuzz(text string) {
+func solveChallenge(text string) {
 	elements := strings.Split(text, " ")
 	//
 	firstDivider, _ := strconv.Atoi(elements[0])

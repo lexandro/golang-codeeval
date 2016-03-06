@@ -6,7 +6,14 @@ import "strings"
 import "bufio"
 import "os"
 import "bytes"
+/*
+ CodeEval's Reverse Words easy challenge solution
 
+ Details: https://www.codeeval.com/open_challenges/8/
+
+ Author: Robert Stern (lexandro2000@gmail.com)
+ Github: https://github.com/lexandro/golang-codeeval
+*/
 func main() {
 	file, err := os.Open(os.Args[1])
 	if err != nil {
@@ -15,15 +22,15 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		reverseWords(scanner.Text())
+		solveChallenge(scanner.Text())
 	}
 }
 
-func reverseWords(text string) {
+func solveChallenge(text string) {
 	var buffer bytes.Buffer
 	elements := strings.Split(text, " ")
 
-	for i := len(elements)-1; i >= 0; i-- {
+	for i := len(elements) - 1; i >= 0; i-- {
 		buffer.WriteString(elements[i])
 		buffer.WriteString(" ")
 	}

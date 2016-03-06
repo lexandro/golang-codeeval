@@ -5,6 +5,14 @@ import "strings"
 import "strconv"
 import "math"
 
+/*
+ CodeEval's Prime Palindrome easy challenge solution
+
+ Details: https://www.codeeval.com/open_challenges/3/
+
+ Author: Robert Stern (lexandro2000@gmail.com)
+ Github: https://github.com/lexandro/golang-codeeval
+*/
 func main() {
 	for i := 1000; i > 0; i-- {
 		if isPrime(i) && isPalindrome(i) {
