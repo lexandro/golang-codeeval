@@ -8,9 +8,9 @@ import (
 )
 
 /*
- CodeEval's Bit Positions easy challenge solution
+ CodeEval's  XXXXX XXXXXX easy challenge solution
 
- Details: https://www.codeeval.com/open_challenges/19/
+ Details: https://www.codeeval.com/open_challenges/XXXXXXXXXXXXXX
 
  Author: Robert Stern (lexandro2000@gmail.com)
  Github: https://github.com/lexandro/golang-codeeval
