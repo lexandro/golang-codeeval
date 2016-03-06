@@ -1,12 +1,12 @@
 package main
 
-import "log"
-import "strings"
-import "bufio"
-import "os"
 import (
-	"strconv"
+	"bufio"
 	"fmt"
+	"log"
+	"os"
+	"strconv"
+	"strings"
 )
 
 /*

@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
-import "log"
-import "strings"
-import "bufio"
-import "os"
-import "bytes"
+import (
+	"bufio"
+	"bytes"
+	"fmt"
+	"log"
+	"os"
+	"strings"
+)
+
 /*
  CodeEval's Reverse Words easy challenge solution
 

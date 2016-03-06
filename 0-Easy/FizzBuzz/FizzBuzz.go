@@ -1,11 +1,13 @@
 package main
 
-import "fmt"
-import "log"
-import "strings"
-import "strconv"
-import "bufio"
-import "os"
+import (
+	"bufio"
+	"fmt"
+	"log"
+	"os"
+	"strconv"
+	"strings"
+)
 
 /*
  CodeEval's FizzBuzz easy challenge solution
@@ -35,13 +37,13 @@ func solveChallenge(text string) {
 	maxCount, _ := strconv.Atoi(elements[2])
 	//
 	for i := 1; i <= maxCount; i++ {
-		if i % firstDivider == 0 {
+		if i%firstDivider == 0 {
 			fmt.Print("F")
 		}
-		if i % secondDivider == 0 {
+		if i%secondDivider == 0 {
 			fmt.Print("B")
 		}
-		if i % firstDivider != 0 && i % secondDivider != 0 {
+		if i%firstDivider != 0 && i%secondDivider != 0 {
 			fmt.Print(i)
 		}
 		fmt.Print(" ")

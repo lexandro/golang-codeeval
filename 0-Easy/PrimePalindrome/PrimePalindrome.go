@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
-import "strings"
-import "strconv"
-import "math"
+import (
+	"fmt"
+	"math"
+	"strconv"
+	"strings"
+)
 
 /*
  CodeEval's Prime Palindrome easy challenge solution
@@ -24,7 +26,7 @@ func main() {
 
 func isPrime(number int) bool {
 	for i := 2; float64(i) < math.Sqrt(float64(number)); i++ {
-		if number % i == 0 {
+		if number%i == 0 {
 			return false
 		}
 	}
@@ -39,7 +41,7 @@ func isPalindrome(number int) bool {
 
 func reverse(s string) string {
 	r := []rune(s)
-	for i, j := 0, len(r) - 1; i < len(r) / 2; i, j = i + 1, j - 1 {
+	for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
 		r[i], r[j] = r[j], r[i]
 	}
 	return string(r)
