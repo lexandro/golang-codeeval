@@ -8,7 +8,7 @@ import (
 )
 
 /*
- CodeEval's  XXXXX XXXXXX easy challenge solution
+ CodeEval's XXXXX easy challenge solution
 
  Details: https://www.codeeval.com/open_challenges/XXXXXXXXXXXXXX
 
