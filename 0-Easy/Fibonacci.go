@@ -24,23 +24,23 @@ func main() {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		problemSolver(scanner.Text())
+		fibonacci(scanner.Text())
 	}
 }
 
-func problemSolver(text string) {
+func fibonacci(text string) {
 	n, _ := strconv.Atoi(text)
-	f1 := 1;
+	f1 := 1
 	if n > 0 {
-		f0 := 0;
+		f0 := 0
 
 		for i := 1; i < n; i++ {
-			f1 = f0 + f1;
-			f0 = f1 - f0;
+			f1 = f0 + f1
+			f0 = f1 - f0
 		}
 
 	} else {
-		f1 = 0;
+		f1 = 0
 	}
 	fmt.Println(f1)
 }
